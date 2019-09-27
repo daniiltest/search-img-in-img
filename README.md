@@ -55,7 +55,7 @@ searchImg(pathInImg, searchedImg)
 const mainImg = canvasMain.getImageData(0, 0, mainWidth, mainHeight)
 const desiredImg = canvasDesired.getImageData(0, 0, desiredWidth, desiredHeight)
 
-const { searchImg } = require('search-img-in-img')
+const { searchImgData } = require('search-img-in-img')
 const result = searchImgData(mainImg, desiredImg, {accuracy: 80, deviation: 30, from: [120, 50]})
 console.log(result) // Object {status: true, x: 130, y: 70, timeSearchData: 438}
 ```
